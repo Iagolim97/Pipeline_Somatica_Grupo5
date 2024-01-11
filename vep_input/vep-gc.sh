@@ -1,5 +1,5 @@
 # diretorio
-cd Pipeline_Somaticas_Grupo5/vep_input
+
 
 ## variaveis de ambiente
 SAMPLE="$1"
