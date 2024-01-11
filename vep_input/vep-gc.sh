@@ -1,5 +1,5 @@
 # diretorio
-cd Pipeline_Somaticas/vep_input
+cd Pipeline_Somaticas_Grupo5/vep_input
 
 ## variaveis de ambiente
 SAMPLE="$1"
@@ -27,7 +27,7 @@ udocker --allow-root run --rm  -v `pwd`:`pwd` -w `pwd` ensemblorg/ensembl-vep fi
 (not IMPACT matches LOW) and \
 (Symbol in hpo/$HPO)"  \
 --force_overwrite \
--o /content/Pipeline_Somaticas/vep_input/vep_output/liftOver_$SAMPLE\_$(basename $CHAIN .over.chain).vep.filter.vcf
+-o Pipeline_Somaticas_Grupo5/vep_input/vep_input/vep_output/liftOver_$SAMPLE\_$(basename $CHAIN .over.chain).vep.filter.vcf
 
 ## bcftools +split-vep
 
